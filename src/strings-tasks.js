@@ -38,7 +38,7 @@ function getStringLength(value) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-  return true ? typeof value === 'string' || value instanceof String : false;
+  return typeof value === 'string' || value instanceof String;
 }
 
 /**
@@ -576,6 +576,7 @@ function getCardId(value) {
   ];
   return cards.indexOf(value);
 }
+
 module.exports = {
   getStringLength,
   isString,
